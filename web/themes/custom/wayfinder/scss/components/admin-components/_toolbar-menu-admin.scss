@@ -1,0 +1,11 @@
+@use "../../abstracts/variables/variables" as *;
+
+.toolbar-menu-administration {
+  ul.toolbar-menu {
+    li.menu-item--expanded, .menu-item__help-main {
+      a.toolbar-icon {
+        font-size: 13px;
+      }
+    }
+  }
+}

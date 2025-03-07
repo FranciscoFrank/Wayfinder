@@ -1,0 +1,8 @@
+uuid: 04fb1881-f1ac-45d9-8640-17937d5391d8
+langcode: en
+status: true
+dependencies: {  }
+id: footer_block
+label: 'Footer block'
+revision: false
+description: 'Use the <em>Footer block</em> when it is placed in the footer.'

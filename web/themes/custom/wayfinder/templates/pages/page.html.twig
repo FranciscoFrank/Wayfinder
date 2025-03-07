@@ -1,0 +1,186 @@
+{#
+/**
+ * @file
+ * Wayfinder's theme implementation to display a single Drupal page.
+ *
+ * The doctype, html, head, and body tags are not in this template. Instead
+ * they can be found in the html.html.twig template normally located in the
+ * core/modules/system directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+{# ... (залишаємо початковий коментар без змін) ... #}
+
+{% block header %}
+  <header>
+    <div class="header-wrapper">
+      {% if page.top_left_header or page.top_middle_header or page.top_right_header %}
+        <div class="wrapper top-header">
+          <div class="header-columns">
+            {% if page.top_left_header %}
+              <div class="top-header__column">
+                {{ page.top_left_header }}
+              </div>
+            {% endif %}
+
+            {% if page.top_middle_header %}
+              <div class="top-header__column">
+                {{ page.top_middle_header }}
+              </div>
+            {% endif %}
+
+            {% if page.top_right_header %}
+              <div class="top-header__column">
+                {{ page.top_right_header }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+
+      {% if page.bottom_header %}
+        <div class="wrapper bottom-header">
+          {{ page.bottom_header }}
+        </div>
+      {% endif %}
+    </div>
+  </header>
+{% endblock %}
+
+{% block main %}
+  <main>
+    <div class="page-wrapper">
+      {% if is_front %}
+        <div class="wrapper banner">
+          {% if page.banner %}
+            {{ page.banner }}
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if page.help %}
+        <div class="wrapper help">
+          {{ page.help }}
+        </div>
+      {% endif %}
+
+      {% if page.breadcrumbs %}
+        <div class="wrapper breadcrumbs">
+          {{ page.breadcrumbs }}
+        </div>
+      {% endif %}
+
+      {% if page.highlighted %}
+        <div class="wrapper highlighted">
+          {{ page.highlighted }}
+        </div>
+      {% endif %}
+
+      {% if page.admin_action %}
+        <div class="wrapper admin-actions">
+          {{ page.admin_action }}
+        </div>
+      {% endif %}
+
+      <div class="wrapper main-content-wrapper">
+        <div class="wrapper main-content">
+          {% if page.pre_content %}
+            <div class="pre-content">
+              {{ page.pre_content }}
+            </div>
+          {% endif %}
+
+          <div class="page-content">
+            {% if page.content_title %}
+              <div class="content-title">
+                {{ page.content_title }}
+              </div>
+            {% endif %}
+
+            {% if page.main_content %}
+              <div class="content">
+                {{ page.main_content }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock %}
+
+{% block footer %}
+  <footer>
+    <div class="footer-wrapper">
+      {% if page.first_column_top_footer or page.second_column_top_footer or page.third_column_top_footer %}
+        <div class="footer__top">
+          <div class="footer-columns">
+            {% if page.first_column_top_footer %}
+              <div class="footer__column">
+                {{ page.first_column_top_footer }}
+              </div>
+            {% endif %}
+
+            {% if page.second_column_top_footer %}
+              <div class="footer__column">
+                {{ page.second_column_top_footer }}
+              </div>
+            {% endif %}
+
+            {% if page.third_column_top_footer %}
+              <div class="footer__column">
+                {{ page.third_column_top_footer }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+      {% if page.first_column_lower_footer or page.second_column_lower_footer or page.third_column_lower_footer %}
+        <div class="footer__lower">
+          <div class="footer-columns">
+            {% if page.first_column_lower_footer %}
+              <div class="footer__column">
+                {{ page.first_column_lower_footer }}
+              </div>
+            {% endif %}
+
+            {% if page.second_column_lower_footer %}
+              <div class="footer__column">
+                {{ page.second_column_lower_footer }}
+              </div>
+            {% endif %}
+
+            {% if page.third_column_lower_footer %}
+              <div class="footer__column">
+                {{ page.third_column_lower_footer }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </footer>
+{% endblock %}

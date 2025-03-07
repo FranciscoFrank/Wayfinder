@@ -1,0 +1,15 @@
+uuid: f9d7af48-7383-4010-920a-5e9d96cf8801
+langcode: en
+status: true
+dependencies: {  }
+name: main_thumbnail
+label: 'Main thumbnail (120 x 120)'
+effects:
+  1bf7aad6-19fb-4d3d-a3e5-3e0d5a7c215f:
+    uuid: 1bf7aad6-19fb-4d3d-a3e5-3e0d5a7c215f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 120
+      height: 120
+      anchor: center-center

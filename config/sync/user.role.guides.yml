@@ -1,0 +1,12 @@
+uuid: d2af0b6e-e590-41c1-931e-81a5841824d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - exclude_node_title
+id: guides
+label: Guide
+weight: -4
+is_admin: false
+permissions:
+  - 'use exclude node title'

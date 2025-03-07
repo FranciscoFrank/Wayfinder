@@ -1,0 +1,10 @@
+name: 'AdvAgg Old Internet Explorer Compatibility Enhancer'
+description: 'Provides some enhanced compatibility with outdated Internet Explorer versions.'
+package: 'Advanced CSS/JS Aggregation'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - advagg:advagg
+type: module
+hidden: true
+lifecycle: obsolete
+lifecycle_link: 'https://www.drupal.org/project/advagg/issues/3330487'

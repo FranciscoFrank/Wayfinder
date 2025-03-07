@@ -1,0 +1,26 @@
+uuid: aaabc3eb-73a0-4f06-9f4d-b0aae2245772
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - contact
+    - exclude_node_title
+    - media
+    - paragraphs_type_permissions
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'use exclude node title'
+  - 'view media'
+  - 'view paragraph content additional_country'
+  - 'view paragraph content additional_image'
+  - 'view paragraph content additional_text'

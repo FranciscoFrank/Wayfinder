@@ -1,0 +1,47 @@
+@use "../abstracts/variables/variables" as *;
+@use "../abstracts/mixins/link-mixin" as *;
+
+ul.navbar-nav {
+  flex-direction: row;
+  justify-content: center !important;
+
+  li.nav-item {
+    width: fit-content;
+
+    a.nav-link {
+      @include link-styles;
+      padding: 0;
+    }
+  }
+}
+
+.navbar-brand {
+  a.site-title {
+    @include link-styles;
+    font-size: 32px;
+    font-weight: $bold;
+  }
+}
+
+ul.social-media-links--platforms.horizontal {
+  display: flex;
+  margin: 0;
+
+  li {
+    display: flex;
+    padding: 0;
+
+    &:nth-child(2) {
+      padding-inline: 20px;
+    }
+
+    a {
+      display: block;
+
+      span {
+        @include link-styles;
+        font-size: 32px;
+      }
+    }
+  }
+}

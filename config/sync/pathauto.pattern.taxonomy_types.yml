@@ -1,0 +1,24 @@
+uuid: 3958b939-6ffd-4474-a9a0-857e66802868
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_types
+label: 'Auto-generation for taxonomy types'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:vocabulary]/[term:name]'
+selection_criteria:
+  6f46a429-a986-4eaf-a7e0-ff28d8af2f3c:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 6f46a429-a986-4eaf-a7e0-ff28d8af2f3c
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      location_type: location_type
+      tips_type: tips_type
+      trip_category: trip_category
+selection_logic: and
+weight: -8
+relationships: {  }

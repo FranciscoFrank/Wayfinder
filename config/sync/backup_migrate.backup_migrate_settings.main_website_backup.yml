@@ -1,0 +1,52 @@
+uuid: 52145c78-5f3c-4143-8322-af60a53472a5
+langcode: en
+status: true
+dependencies: {  }
+id: main_website_backup
+label: 'The main type of website backup'
+config:
+  namer:
+    filename: Backup
+    timestamp: true
+    timestamp_format: Y-m-d\TH-i-s
+  compressor:
+    compression: zip
+  utils:
+    site_offline: true
+  metadata:
+    description: ''
+  db_exclude:
+    exclude_tables: {  }
+    nodata_tables:
+      cache_bootstrap: cache_bootstrap
+      cache_config: cache_config
+      cache_container: cache_container
+      cache_data: cache_data
+      cache_default: cache_default
+      cache_discovery: cache_discovery
+      cache_discovery_migration: cache_discovery_migration
+      cache_dynamic_page_cache: cache_dynamic_page_cache
+      cache_entity: cache_entity
+      cache_menu: cache_menu
+      cache_migrate: cache_migrate
+      cache_page: cache_page
+      cache_render: cache_render
+      cache_toolbar: cache_toolbar
+      sessions: sessions
+      watchdog: watchdog
+  private_files_exclude:
+    exclude_filepaths:
+      - backup_migrate
+  public_files_exclude:
+    exclude_filepaths:
+      - js
+      - css
+      - php
+      - styles
+      - 'config_*'
+      - .htaccess
+  notify:
+    notify_success_enable: 1
+    notify_success_email: kolia.boychak@gmail.com
+    notify_failure_enable: 1
+    notify_failure_email: kolia.boychak@gmail.com

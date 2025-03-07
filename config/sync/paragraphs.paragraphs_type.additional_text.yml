@@ -1,0 +1,10 @@
+uuid: b7eb3bd6-bed9-4c7e-bd61-747ef22ec483
+langcode: en
+status: true
+dependencies: {  }
+id: additional_text
+label: 'Additional Text'
+icon_uuid: null
+icon_default: null
+description: 'Use <em>Additional Text</em> when you want to add more text to your content'
+behavior_plugins: {  }

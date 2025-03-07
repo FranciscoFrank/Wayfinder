@@ -1,0 +1,33 @@
+uuid: e27bc45d-d1f7-4043-a892-20489ba2a61b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.traveler-menu
+  module:
+    - system
+    - user
+  theme:
+    - gin
+id: gin_traveler_menu
+theme: gin
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:traveler-menu'
+settings:
+  id: 'system_menu_block:traveler-menu'
+  label: 'Traveler menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      traveler: traveler

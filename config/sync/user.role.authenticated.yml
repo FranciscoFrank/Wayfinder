@@ -1,0 +1,42 @@
+uuid: e6b8520e-0e16-4736-8979-bdd33c85e313
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.description
+    - filter.format.short_description
+    - filter.format.webform_default
+  module:
+    - comment
+    - contact
+    - exclude_node_title
+    - file
+    - filter
+    - fontawesome
+    - media
+    - node
+    - paragraphs_type_permissions
+    - system
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: 'Authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access fontawesome additional settings'
+  - 'access site-wide contact form'
+  - 'delete own files'
+  - 'edit own comments'
+  - 'post comments'
+  - 'use exclude node title'
+  - 'use text format description'
+  - 'use text format short_description'
+  - 'use text format webform_default'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view paragraph content additional_country'
+  - 'view paragraph content additional_image'
+  - 'view paragraph content additional_text'

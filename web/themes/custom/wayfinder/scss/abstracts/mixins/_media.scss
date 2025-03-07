@@ -1,0 +1,40 @@
+@use 'sass:map';
+
+// Media variables.
+$breakpoints: (
+  s-small-screen: '320px',
+  s-screen: '375px',
+  l-small-screen: '425px',
+  s-medium-screen: '576px',
+  medium-screen: '768px',
+  l-medium-screen: '992px',
+  s-large-screen: '1024px',
+  large-screen: '1280px',
+  l-large-screen: '1440px'
+) !default;
+
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == '' {
+    @content;
+  }
+
+  @else {
+    // Retrieves the value from the key.
+    $value: map.get($breakpoints, $breakpoint);
+
+    // If the key exists in the map.
+    @if $value != null {
+
+      // Prints a media query based on the value.
+      @media (max-width: $value) {
+        @content;
+      }
+    }
+
+    // If the key doesn't exist in the map.
+    @else {
+      @warn 'Unfortunately, no value could be retrieved from #{$breakpoint}. '
+        + 'Please make sure it is defined in $breakpoints map.';
+    }
+  }
+}

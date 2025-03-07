@@ -1,0 +1,13 @@
+uuid: d9e4875b-dc9f-40e0-bbe2-3c084c1f4187
+langcode: en
+status: true
+dependencies: {  }
+id: monthly_schedule
+label: 'Monthly Schedule'
+enabled: true
+keep: 5
+period: 1814400
+cron: null
+source_id: default_db
+destination_id: private_files
+settings_profile_id: main_website_backup

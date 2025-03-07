@@ -1,0 +1,43 @@
+@use "../abstracts/variables/variables" as *;
+
+footer {
+  .footer-wrapper {
+    .footer__lower {
+      .footer__column {
+        display: flex;
+        align-items: center;
+
+        &:nth-child(2) {
+          justify-content: center;
+        }
+
+        &:nth-child(3) {
+          justify-content: flex-end;
+        }
+
+        .region-second-column-lower-footer {
+          align-items: center;
+
+          .block-block-content {
+            .field--name-body {
+              p {
+                margin: 0;
+
+                a {
+                  font-size: $font-size-lg;
+                  text-transform: uppercase;
+                  font-weight: $bold;
+                }
+              }
+            }
+          }
+        }
+
+        .region-third-column-lower-footer {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+uuid: 88c6ab67-c9e6-442b-bd9f-9f47fd4272e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: auto_tips_and_locations
+label: 'Auto-generation for Tips and Locations'
+type: 'canonical_entities:node'
+pattern: '/[node:content-type]/[node:title]'
+selection_criteria:
+  b13b9b30-0fac-496a-9604-d090beab8a0a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b13b9b30-0fac-496a-9604-d090beab8a0a
+    context_mapping:
+      node: node
+    bundles:
+      locations: locations
+      tips: tips
+selection_logic: and
+weight: -10
+relationships: {  }

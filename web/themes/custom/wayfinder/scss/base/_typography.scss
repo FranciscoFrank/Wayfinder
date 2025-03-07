@@ -1,0 +1,60 @@
+@use "../abstracts/variables/variables" as *;
+@use "../abstracts/mixins/link-mixin" as *;
+
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono');
+
+html, body, span, p {
+  font-family: "JetBrains Mono", sans-serif;
+  color: $main-text-color;
+  font-size: $font-size-base;
+  font-weight: $normal;
+  line-height: $line-height-xs;
+}
+
+span, p, h1, h2, h3, h4, h5, h6, a, li, ul {
+  &::selection {
+    background-color: rgba($main-accent-color, 15%);
+  }
+}
+
+a {
+  @include link-styles;
+}
+
+h1 {
+  font-size: $font-size-4xl;
+  line-height: $line-height-4xl;
+  font-weight: $extra-bold;
+}
+
+h2 {
+  font-size: $font-size-3xl;
+  line-height: $line-height-3xl;
+  font-weight: $extra-bold;
+}
+
+h3 {
+  font-size: $font-size-2xl;
+  line-height: $line-height-2xl;
+  font-weight: $bold;
+}
+
+h4 {
+  font-size: $font-size-xl;
+  line-height: $line-height-xl;
+  font-weight: $medium;
+}
+
+h5 {
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
+  font-weight: $medium;
+}
+
+h6 {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-weight: $normal;
+}
+
+

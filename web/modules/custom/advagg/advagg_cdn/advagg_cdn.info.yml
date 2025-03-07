@@ -1,0 +1,10 @@
+name: 'AdvAgg CDN'
+description: 'Use a shared CDN for JavaScript and/or CSS libraries, Google Libraries API currently.'
+package: 'Advanced CSS/JS Aggregation'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - advagg:advagg
+type: module
+hidden: true
+lifecycle: obsolete
+lifecycle_link: 'https://www.drupal.org/project/advagg/issues/3330647'

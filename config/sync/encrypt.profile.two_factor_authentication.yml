@@ -1,0 +1,13 @@
+uuid: 6f8f5c13-9d70-4c04-8feb-2b3d03cc51dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - key.key.two_factor_authentication
+  module:
+    - sodium
+id: two_factor_authentication
+label: 'Two-factor Authentication'
+encryption_method: sodium
+encryption_method_configuration: {  }
+encryption_key: two_factor_authentication

@@ -1,0 +1,8 @@
+name: Exclude Node Title
+type: module
+description: 'Provides the option of excluding node title(s) from display by individual node, node bundle, and view mode.'
+core_version_requirement: ^8 || ^9 || ^10 || ^11
+package: Other
+configure: exclude_node_title.settings
+dependencies:
+  - drupal:node

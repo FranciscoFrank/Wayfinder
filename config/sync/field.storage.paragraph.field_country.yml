@@ -1,0 +1,20 @@
+uuid: 88f975f3-7ef2-47f7-a799-c306e521ad34
+langcode: en
+status: true
+dependencies:
+  module:
+    - country
+    - paragraphs
+id: paragraph.field_country
+field_name: field_country
+entity_type: paragraph
+type: country
+settings:
+  selectable_countries: {  }
+module: country
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

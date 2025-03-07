@@ -1,0 +1,28 @@
+uuid: 30063f26-6ce5-409c-b189-e0c46fcc7dff
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_image
+  module:
+    - user
+_core:
+  default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  masquerade:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 50
+    region: content
+hidden:
+  breadcrumbs: true
+  customer_profiles: true
+  field_image: true
+  langcode: true
+  member_for: true
+  search_api_excerpt: true

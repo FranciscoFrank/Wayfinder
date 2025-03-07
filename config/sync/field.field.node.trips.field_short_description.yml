@@ -1,0 +1,24 @@
+uuid: 558fc7f9-119c-4a91-adeb-7de4c229f100
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_description
+    - filter.format.short_description
+    - node.type.trips
+  module:
+    - text
+id: node.trips.field_short_description
+field_name: field_short_description
+entity_type: node
+bundle: trips
+label: 'Short Description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - short_description
+field_type: text

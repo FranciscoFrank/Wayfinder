@@ -1,0 +1,17 @@
+uuid: f8485255-81db-4d17-8d16-e6b488766608
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Locations
+type: locations
+description: 'Use <em>Locations</em> for interesting locations around the world, such as <em>"The Statue of Liberty"</em>.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

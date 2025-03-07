@@ -1,0 +1,35 @@
+@use "../abstracts/variables/variables" as *;
+
+.node__content {
+  .copyright-page {
+    .block-block-content {
+      .field--name-field-text {
+        .field__item {
+          margin-bottom: 20px;
+
+          .field--name-field-text {
+            h4 {
+              margin-bottom: 5px;
+            }
+
+            p {
+              margin: 0;
+
+              span {
+                color: $main-text-color !important;
+                font-size: $font-size-base !important;
+                line-height: $line-height-xs !important;
+              }
+            }
+
+            ul {
+              list-style: circle;
+              padding-left: 30px;
+              margin-block: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

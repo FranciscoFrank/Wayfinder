@@ -1,0 +1,89 @@
+uuid: 0bad7c43-5d45-4b83-96bc-ae098eb13529
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_image
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          d8e6120f-e5b9-48f9-91f3-a21b2e749e7f:
+            uuid: d8e6120f-e5b9-48f9-91f3-a21b2e749e7f
+            region: content
+            configuration:
+              id: 'extra_field_block:user:user:member_for'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          2f143155-f9d3-4998-b0b9-cbf89b7c69c6:
+            uuid: 2f143155-f9d3-4998-b0b9-cbf89b7c69c6
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          72a716e3-1ad7-4a54-b0b4-eb1f6d89ff79:
+            uuid: 72a716e3-1ad7-4a54-b0b4-eb1f6d89ff79
+            region: content
+            configuration:
+              id: 'extra_field_block:user:user:masquerade'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  masquerade:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 50
+    region: content
+  member_for:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  breadcrumbs: true
+  customer_profiles: true
+  langcode: true
+  search_api_excerpt: true

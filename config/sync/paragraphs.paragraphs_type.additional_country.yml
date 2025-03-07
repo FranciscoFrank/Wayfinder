@@ -1,0 +1,10 @@
+uuid: 5b4979ee-cffb-431a-9268-3c3b44bff24c
+langcode: en
+status: true
+dependencies: {  }
+id: additional_country
+label: 'Additional Country'
+icon_uuid: null
+icon_default: null
+description: 'Use <em>Additional Country</em> when you want to add more countries to your content'
+behavior_plugins: {  }

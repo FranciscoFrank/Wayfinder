@@ -1,0 +1,20 @@
+uuid: 8ac333f4-8199-489e-a536-0d6d597d03b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wayfinder
+id: wayfinder_messages
+theme: wayfinder
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

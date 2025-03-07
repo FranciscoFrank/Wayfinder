@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: en
+uuid: 8dda47aa-c180-4d76-85b5-2568b6aaa0d2
+name: Wayfinder
+mail: kolia.boychak@gmail.com
+slogan: 'Your Story, Our Map - Exploring the World Together'
+page:
+  403: /node/8
+  404: /node/7
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

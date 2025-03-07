@@ -1,0 +1,24 @@
+uuid: 719d09c7-14b3-4856-8f69-4a379c82fb7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - filter.format.description
+    - node.type.trips
+  module:
+    - text
+id: node.trips.field_description
+field_name: field_description
+entity_type: node
+bundle: trips
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - description
+field_type: text_long

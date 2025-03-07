@@ -1,0 +1,28 @@
+name: Wayfinder theme
+type: theme
+base theme: bootstrap5
+description: 'Wayfinder theme is a custom theme designed for the Wayfinder website. The theme is based on Bootstrap5.'
+core_version_requirement: ^10 || ^11
+
+libraries:
+  - wayfinder/wayfinder
+
+regions:
+  top_left_header: 'Top Left Header'
+  top_middle_header: 'Top Middle Header'
+  top_right_header: 'Top Right Header'
+  bottom_header: 'Bottom Header'
+  banner: 'Banner'
+  help: 'Help'
+  breadcrumbs: 'Breadcrumbs'
+  highlighted: 'Highlighted'
+  admin_action: 'Admin Action'
+  pre_content: 'PreContent'
+  content_title: 'Content title'
+  main_content: 'Main Content'
+  first_column_top_footer: 'First Column of the Top Footer'
+  second_column_top_footer: 'Second Column of the Top Footer'
+  third_column_top_footer: 'Third Column of the Top Footer'
+  first_column_lower_footer: 'First Column of the Lower Footer'
+  second_column_lower_footer: 'Second Column of the Lower Footer'
+  third_column_lower_footer: 'Third Column of the Lower Footer'

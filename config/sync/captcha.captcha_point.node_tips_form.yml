@@ -1,0 +1,7 @@
+uuid: cf92e75c-e2e3-40cb-a2d7-60cc77ff2395
+langcode: en
+status: false
+dependencies: {  }
+formId: node_tips_form
+captchaType: default
+label: node_tips_form

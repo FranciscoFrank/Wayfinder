@@ -1,0 +1,42 @@
+uuid: 4e63eb71-6499-4871-bdfa-dea7fa64db6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.block_text
+  module:
+    - ckeditor5
+format: block_text
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - undo
+      - redo
+      - '|'
+      - bold
+      - italic
+      - underline
+      - '|'
+      - link
+      - blockQuote
+      - '|'
+      - indent
+      - outdent
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - removeFormat
+      - '|'
+      - sourceEditing
+  plugins:
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+image_upload:
+  status: false

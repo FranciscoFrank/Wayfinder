@@ -1,0 +1,29 @@
+uuid: 3841e16b-0fe0-48a1-a19a-a98e22df0681
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.locations
+  module:
+    - user
+id: node.locations.default
+targetEntityType: node
+bundle: locations
+mode: default
+content:
+  field_country:
+    type: country_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  breadcrumbs: true
+  langcode: true
+  search_api_excerpt: true

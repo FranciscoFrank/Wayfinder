@@ -1,0 +1,194 @@
+@use "../../abstracts/variables/variables" as *;
+@use "../../abstracts/mixins/link-mixin" as *;
+
+.wrapper.help {
+  margin-block: 15px;
+
+  .region-help {
+    .block-help-block {
+      p {
+        margin-bottom: 10px;
+
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.dialog-off-canvas-main-canvas {
+  form.node-page-layout-builder-form {
+    .form-actions {
+      display: flex;
+      align-items: center;
+
+      input {
+        height: fit-content;
+      }
+
+      #edit-preview-toggle {
+        flex: 1;
+        padding-inline: 20px;
+        height: fit-content;
+
+        .js-form-item {
+          display: flex;
+          align-items: center;
+          margin: 0;
+
+          input {
+            height: 20px;
+            accent-color: $main-accent-color;
+          }
+
+          label {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+
+    .js-form-item {
+      display: flex;
+
+      .vertical-tabs {
+        border: 1px solid $main-accent-color;
+        display: flex;
+        margin: 0;
+        margin-block: 15px;
+        width: 100%;
+
+        ul.vertical-tabs__menu {
+          margin: 0;
+          border-top: none;
+          border-right: 1px solid $main-accent-color;
+          width: 30%;
+
+          .vertical-tabs__menu-item {
+            padding: 15px;
+            height: 100%;
+            border: none;
+
+            a {
+              padding: 0;
+
+              &:hover {
+                outline: none;
+              }
+            }
+          }
+        }
+
+        .vertical-tabs__panes {
+          flex: 1;
+
+          details {
+            height: 100%;
+            border: none;
+            border-radius: 0;
+            display: flex;
+            align-content: center;
+
+            .card-body {
+              padding: 15px;
+
+              .js-form-item {
+                display: flex;
+                align-items: center;
+                margin: 0;
+
+                label {
+                  padding-left: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #layout-builder {
+    border: 3px solid $main-accent-color;
+
+    .layout-builder__layout {
+      .layout-builder__region {
+        outline: 2px dashed $main-accent-color;
+      }
+    }
+
+    .layout-builder__add-block {
+      background-color: rgba($main-accent-color, 10%);
+    }
+  }
+}
+
+#drupal-off-canvas-wrapper {
+  background-color: $main-bg-color;
+  border-color: $main-accent-color;
+
+  #drupal-off-canvas {
+    background-color: $main-bg-color;
+
+    .inline-block-create-button {
+      background-color: $main-bg-color;
+      color: $main-text-color;
+      border-color: $main-accent-color;
+    }
+
+    .js-layout-builder-categories {
+      background-color: $main-bg-color;
+
+      details.js-layout-builder-category {
+        background-color: $main-bg-color;
+
+        .card-header {
+          background-color: $main-accent-color !important;
+
+          &:focus {
+            outline: none;
+            outline-offset: 0;
+          }
+        }
+
+        .card-body {
+          a {
+            @include link-styles;
+          }
+
+          &:focus {
+            outline: none;
+            outline-offset: 0;
+          }
+        }
+      }
+    }
+
+    .use-ajax {
+      @include link-styles;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    ul.inline-block-list {
+      li {
+        a.use-ajax {
+          background-color: $main-bg-color;
+          border-bottom: 1px solid $main-accent-color;
+        }
+      }
+    }
+
+    form {
+      color: $main-text-color;
+
+      .js-form-type-checkbox {
+
+      }
+    }
+  }
+}
+

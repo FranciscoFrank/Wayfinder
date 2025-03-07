@@ -1,0 +1,22 @@
+uuid: 770c7b0f-0e17-4aac-b180-7625a3fdb842
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_country
+    - paragraphs.paragraphs_type.additional_country
+  module:
+    - country
+id: paragraph.additional_country.field_country
+field_name: field_country
+entity_type: paragraph
+bundle: additional_country
+label: Country
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selectable_countries: {  }
+field_type: country

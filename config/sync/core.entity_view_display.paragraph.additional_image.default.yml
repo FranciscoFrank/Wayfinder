@@ -1,0 +1,24 @@
+uuid: 35100a19-5713-4cfd-9bb9-e182e5cd8aaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.additional_image.field_image
+    - paragraphs.paragraphs_type.additional_image
+id: paragraph.additional_image.default
+targetEntityType: paragraph
+bundle: additional_image
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  breadcrumbs: true
+  search_api_excerpt: true

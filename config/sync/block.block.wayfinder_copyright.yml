@@ -1,0 +1,25 @@
+uuid: 78a35c11-61cd-4335-8b46-379ade8a6c50
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_block:43b4c2de-4db9-4a91-959e-a71029ff7feb'
+  module:
+    - block_content
+  theme:
+    - wayfinder
+id: wayfinder_copyright
+theme: wayfinder
+region: second_column_lower_footer
+weight: 0
+provider: null
+plugin: 'block_content:43b4c2de-4db9-4a91-959e-a71029ff7feb'
+settings:
+  id: 'block_content:43b4c2de-4db9-4a91-959e-a71029ff7feb'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

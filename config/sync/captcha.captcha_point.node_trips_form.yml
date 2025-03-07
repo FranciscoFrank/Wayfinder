@@ -1,0 +1,7 @@
+uuid: e2e11d6f-8f42-4fe0-95bb-2c6faa15cb63
+langcode: en
+status: false
+dependencies: {  }
+formId: node_trips_form
+captchaType: default
+label: node_trips_form

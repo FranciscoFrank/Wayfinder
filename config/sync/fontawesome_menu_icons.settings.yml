@@ -1,0 +1,23 @@
+_core:
+  default_config_hash: 5TDl2QyTY-mHHJ0_VrmcxVDwhp4oqkLTzDI03yXvhAI
+menu_link_icons:
+  user_page:
+    icon: fa-user
+    prefix: fa-solid
+    tag: i
+    appearance: only
+  user_logout:
+    icon: fa-sign-out
+    prefix: fa
+    tag: i
+    appearance: only
+  masquerade_unmasquerade:
+    icon: fa-mask
+    prefix: fas
+    tag: i
+    appearance: only
+  standard_front_page:
+    icon: fa-house
+    prefix: fa-solid
+    tag: i
+    appearance: only

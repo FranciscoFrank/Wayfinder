@@ -1,0 +1,67 @@
+uuid: dfeea559-ea65-4cf5-b5b9-4afd9dbab485
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tips.field_country
+    - field.field.node.tips.field_description
+    - field.field.node.tips.field_media
+    - field.field.node.tips.field_short_description
+    - field.field.node.tips.field_tips_type
+    - node.type.tips
+  module:
+    - country
+    - text
+    - user
+id: node.tips.default
+targetEntityType: node
+bundle: tips
+mode: default
+content:
+  field_country:
+    type: country_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_short_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_tips_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  breadcrumbs: true
+  langcode: true
+  search_api_excerpt: true

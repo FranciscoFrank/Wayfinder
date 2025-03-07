@@ -1,0 +1,18 @@
+uuid: 0ad3fb4f-9308-494d-8a3e-5cbacee7cd93
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tips
+id: node.tips.changed
+field_name: changed
+entity_type: node
+bundle: tips
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,42 @@
+.page-wrapper {
+  .page-wrapper__node-edit-form {
+    .node-trips-form {
+      .layout-node-form {
+        .layout-region-node-main {
+          display: flex;
+          flex-wrap: wrap;
+
+          .field--name-title, .field--name-field-description, .field--name-field-media, .field--name-field-locations {
+            width: 100%;
+
+            .claro-autocomplete {
+              width: 100%;
+            }
+          }
+
+          .field--name-field-short-description {
+            width: 100%;
+
+            input {
+              width: 100%;
+            }
+          }
+
+          .field--name-field-rating {
+            width: 15%;
+            padding-right: 10px;
+          }
+
+          .field--name-field-trips-type {
+            width: 85%;
+            padding-left: 10px;
+
+            .claro-autocomplete {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

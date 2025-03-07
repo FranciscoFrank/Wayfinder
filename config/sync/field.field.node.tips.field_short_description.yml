@@ -1,0 +1,24 @@
+uuid: 48347dd1-0634-4bbc-8246-3250a6e8d6a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_description
+    - filter.format.short_description
+    - node.type.tips
+  module:
+    - text
+id: node.tips.field_short_description
+field_name: field_short_description
+entity_type: node
+bundle: tips
+label: 'Short Description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - short_description
+field_type: text

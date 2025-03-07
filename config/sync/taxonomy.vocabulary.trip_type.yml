@@ -1,0 +1,9 @@
+uuid: 26bc9c90-6875-4b63-84cd-48a9d5592c8d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Trip type'
+vid: trip_type
+description: null
+weight: -10
+new_revision: false

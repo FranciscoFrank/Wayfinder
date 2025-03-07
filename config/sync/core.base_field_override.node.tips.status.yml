@@ -1,0 +1,22 @@
+uuid: 11b24bbd-3fbd-4e80-8c21-b48de43d4e72
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tips
+id: node.tips.status
+field_name: status
+entity_type: node
+bundle: tips
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,39 @@
+uuid: 1d2105d7-68b4-4adc-bc70-e7b787325df3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_image
+  module:
+    - media_library
+    - user
+_core:
+  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  language:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  contact: true
+  customer_profiles: true
+  langcode: true
+  path: true
+  timezone: true

@@ -1,0 +1,17 @@
+uuid: 0cc196e8-95f6-4956-bd7a-04eb7a595c6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Tips
+type: tips
+description: 'Use <em>Tips</em> to give useful advice to other travelers, such as <em>"What documents should you take with you when traveling"</em>.'
+help: null
+new_revision: true
+preview_mode: 2
+display_submitted: false

@@ -1,0 +1,13 @@
+wayfinder:
+  version: 1.0
+  css:
+    theme:
+      css/styles.css: {}
+
+  js:
+    js/global-script.js: {}
+    js/user-menu.js: {}
+
+  dependencies:
+    - core/drupal
+    - core/jquery

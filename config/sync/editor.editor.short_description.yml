@@ -1,0 +1,41 @@
+uuid: 9bd4aa5c-8a48-454d-9669-657dc810da7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.short_description
+  module:
+    - ckeditor5
+format: short_description
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - undo
+      - redo
+      - '|'
+      - heading
+      - bold
+      - italic
+      - underline
+      - '|'
+      - indent
+      - outdent
+      - '|'
+      - link
+      - '|'
+      - removeFormat
+      - '|'
+      - sourceEditing
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+image_upload:
+  status: false

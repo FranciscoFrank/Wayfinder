@@ -1,0 +1,44 @@
+uuid: 2f779ba8-77c8-4cc1-a400-1e9f2cfff8eb
+langcode: en
+status: false
+dependencies:
+  config:
+    - filter.format.text
+  module:
+    - ckeditor5
+format: text
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - undo
+      - redo
+      - '|'
+      - bold
+      - underline
+      - italic
+      - '|'
+      - blockQuote
+      - horizontalLine
+      - '|'
+      - alignment
+      - '|'
+      - insertTable
+      - '|'
+      - removeFormat
+      - '|'
+      - heading
+  plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+image_upload:
+  status: false

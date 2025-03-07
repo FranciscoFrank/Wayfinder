@@ -1,0 +1,14 @@
+uuid: cc21d25b-b938-4965-90ed-d92f0c0ed500
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_accounts
+label: 'Auto-generation for user accounts'
+type: 'canonical_entities:user'
+pattern: '/[user:roles:last]/profile/[user:id]'
+selection_criteria: {  }
+selection_logic: and
+weight: -9
+relationships: {  }

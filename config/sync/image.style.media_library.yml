@@ -1,0 +1,20 @@
+uuid: 0fb8dd25-6ea7-4fbf-a52d-9c3a9c91e26f
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - media_library
+_core:
+  default_config_hash: FxMdscEA4aDH0KPM73HIZtVn3zIAgC1kQ3CkBw26HYs
+name: media_library
+label: 'Media Library thumbnail (120 x 120)'
+effects:
+  047ffaaa-449c-48e2-9abc-dc83f6f2eefd:
+    uuid: 047ffaaa-449c-48e2-9abc-dc83f6f2eefd
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 120
+      height: 120
+      anchor: center-center

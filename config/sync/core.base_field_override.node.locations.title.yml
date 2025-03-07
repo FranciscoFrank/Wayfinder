@@ -1,0 +1,18 @@
+uuid: 854063c7-8566-42fa-b7f6-b039768f9019
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.locations
+id: node.locations.title
+field_name: title
+entity_type: node
+bundle: locations
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

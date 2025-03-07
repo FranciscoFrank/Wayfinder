@@ -1,0 +1,44 @@
+uuid: 96cf526f-9bba-4af1-b917-c5a002f9fde0
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.description
+  module:
+    - ckeditor5
+format: description
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - undo
+      - redo
+      - '|'
+      - heading
+      - bold
+      - italic
+      - underline
+      - link
+      - '|'
+      - removeFormat
+      - '|'
+      - drupalInsertImage
+      - '|'
+      - indent
+      - outdent
+      - '|'
+      - sourceEditing
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_imageResize:
+      allow_resize: true
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+image_upload:
+  status: false

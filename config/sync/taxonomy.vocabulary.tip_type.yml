@@ -1,0 +1,9 @@
+uuid: d183a902-732e-41ba-9216-08ff7577ba78
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tip type'
+vid: tip_type
+description: null
+weight: -8
+new_revision: false

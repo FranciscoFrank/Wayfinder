@@ -1,0 +1,208 @@
+uuid: ea1a80b8-5967-4d77-9bb8-394012d5b422
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.trips.field_description
+    - field.field.node.trips.field_locations
+    - field.field.node.trips.field_media
+    - field.field.node.trips.field_rating
+    - field.field.node.trips.field_short_description
+    - field.field.node.trips.field_trips_type
+    - node.type.trips
+  module:
+    - layout_builder
+    - layout_discovery
+    - starrating
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          a664d2d9-da75-46e3-a07d-1a0c395621ed:
+            uuid: a664d2d9-da75-46e3-a07d-1a0c395621ed
+            region: content
+            configuration:
+              id: 'field_block:node:trips:field_media'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          19652385-1620-43e0-836a-54c66e3b1161:
+            uuid: 19652385-1620-43e0-836a-54c66e3b1161
+            region: content
+            configuration:
+              id: 'field_block:node:trips:field_short_description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          ec81913f-ff8e-416c-b004-38496e2061d5:
+            uuid: ec81913f-ff8e-416c-b004-38496e2061d5
+            region: content
+            configuration:
+              id: 'field_block:node:trips:field_description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          4d7b1857-4cf9-46b8-8e20-7abb4c738e35:
+            uuid: 4d7b1857-4cf9-46b8-8e20-7abb4c738e35
+            region: content
+            configuration:
+              id: 'field_block:node:trips:field_locations'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          24468652-0123-4ef7-98ac-1db3a0e99b6f:
+            uuid: 24468652-0123-4ef7-98ac-1db3a0e99b6f
+            region: content
+            configuration:
+              id: 'field_block:node:trips:field_rating'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: starrating
+                label: above
+                settings:
+                  fill_blank: 0
+                  icon_type: star
+                  icon_color: 1
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          0f0f27e3-ada2-436d-89ba-3152af177a06:
+            uuid: 0f0f27e3-ada2-436d-89ba-3152af177a06
+            region: content
+            configuration:
+              id: 'field_block:node:trips:field_trips_type'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          29b9e27e-22f9-4f43-9f1e-32a80911f3b3:
+            uuid: 29b9e27e-22f9-4f43-9f1e-32a80911f3b3
+            region: content
+            configuration:
+              id: 'field_block:node:trips:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.trips.default
+targetEntityType: node
+bundle: trips
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_locations:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_rating:
+    type: starrating
+    label: above
+    settings:
+      fill_blank: 0
+      icon_type: star
+      icon_color: 1
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_short_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_trips_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  breadcrumbs: true
+  langcode: true
+  search_api_excerpt: true

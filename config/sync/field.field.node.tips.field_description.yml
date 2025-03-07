@@ -1,0 +1,24 @@
+uuid: da716753-955d-4d0d-a769-737843c01f0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - filter.format.description
+    - node.type.tips
+  module:
+    - text
+id: node.tips.field_description
+field_name: field_description
+entity_type: node
+bundle: tips
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - description
+field_type: text_long

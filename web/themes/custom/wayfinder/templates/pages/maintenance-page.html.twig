@@ -1,0 +1,37 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a single Drupal page while offline.
+ *
+ * All available variables are mirrored in page.html.twig.
+ * Some may be blank but they are provided for consistency.
+ *
+ * @see template_preprocess_maintenance_page()
+ *
+ * @ingroup themeable
+ */
+#}
+{% extends "page.html.twig" %}
+
+{% block main %}
+  <main>
+    <div class="page-wrapper maintenance">
+      <div class="wrapper main-content-wrapper">
+        <div class="wrapper main-content">
+          <div class="page-content maintenance-content">
+            <div class="maintenance-image">
+              <img src="{{ base_path ~ directory }}/images/maintenance/maintenance.svg" alt="Maintenance image">
+            </div>
+            <div class="maintenance-message">
+              <h1>Maintenance</h1>
+              <p>We apologize for the inconvenience, but the site is currently undergoing maintenance. It will be fully operational again as soon as the work is completed. Thank you for your patience and understanding.</p>
+              <p>Best regards,<br>
+              The Wayfinder Development and Administration Team.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock %}
+

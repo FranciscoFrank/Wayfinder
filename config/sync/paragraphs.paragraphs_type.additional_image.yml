@@ -1,0 +1,10 @@
+uuid: cdcdfe90-6bcc-493c-be73-5c0396ec85c0
+langcode: en
+status: true
+dependencies: {  }
+id: additional_image
+label: 'Additional Image'
+icon_uuid: null
+icon_default: null
+description: 'Use <em>Additional Image</em> when you want to add more images to your content'
+behavior_plugins: {  }

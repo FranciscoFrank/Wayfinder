@@ -1,0 +1,242 @@
+uuid: 5855828f-e9a8-425e-a47f-d3f28ff262b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - block_content.type.footer_block
+    - block_content.type.text_blocks
+    - core.entity_view_display.node.page.default
+    - filter.format.block_text
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.locations
+    - node.type.page
+    - node.type.tips
+    - user.role.guides
+    - user.role.moderator
+    - user.role.tourist
+    - user.role.traveler
+  module:
+    - antibot
+    - block
+    - block_content
+    - comment
+    - conditional_fields
+    - config
+    - contact
+    - contextual
+    - devel
+    - devel_generate
+    - entity_reference_revisions
+    - exclude_node_title
+    - field_ui
+    - file
+    - filter
+    - help
+    - image
+    - layout_builder
+    - layout_custom_section_classes
+    - masquerade
+    - media
+    - metatag
+    - migrate
+    - node
+    - paragraphs
+    - paragraphs_type_permissions
+    - path
+    - pathauto
+    - profile
+    - redirect
+    - redirect_404
+    - smtp
+    - system
+    - taxonomy
+    - toolbar
+    - update
+    - views_ui
+id: developer
+label: Developer
+weight: -2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access block library'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access devel information'
+  - 'access files overview'
+  - 'access help pages'
+  - 'access media overview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer actions'
+  - 'administer antibot configuration'
+  - 'administer block content'
+  - 'administer block types'
+  - 'administer block_content display'
+  - 'administer block_content fields'
+  - 'administer block_content form display'
+  - 'administer blocks'
+  - 'administer comment display'
+  - 'administer comment fields'
+  - 'administer comment form display'
+  - 'administer comment types'
+  - 'administer comments'
+  - 'administer contact forms'
+  - 'administer contact_message display'
+  - 'administer contact_message fields'
+  - 'administer contact_message form display'
+  - 'administer content types'
+  - 'administer devel_generate'
+  - 'administer display modes'
+  - 'administer filters'
+  - 'administer image styles'
+  - 'administer layout builder section attributes'
+  - 'administer layout builder section classes module settings'
+  - 'administer layout builder sections region attributes'
+  - 'administer media'
+  - 'administer media display'
+  - 'administer media fields'
+  - 'administer media form display'
+  - 'administer media types'
+  - 'administer menu'
+  - 'administer meta tags'
+  - 'administer modules'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'administer node form display'
+  - 'administer nodes'
+  - 'administer paragraph display'
+  - 'administer paragraph fields'
+  - 'administer paragraph form display'
+  - 'administer paragraphs settings'
+  - 'administer paragraphs types'
+  - 'administer pathauto'
+  - 'administer profile display'
+  - 'administer profile fields'
+  - 'administer profile form display'
+  - 'administer redirect settings'
+  - 'administer redirects'
+  - 'administer site configuration'
+  - 'administer smtp module'
+  - 'administer software updates'
+  - 'administer taxonomy'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'administer url aliases'
+  - 'administer user display'
+  - 'administer user fields'
+  - 'administer user form display'
+  - 'administer views'
+  - 'bulk delete aliases'
+  - 'bulk update aliases'
+  - 'bypass node access'
+  - 'bypass paragraphs type content access'
+  - 'configure all page node layout overrides'
+  - 'configure any layout'
+  - 'configure editable page node layout overrides'
+  - 'create and edit custom blocks'
+  - 'create audio media'
+  - 'create basic block content'
+  - 'create document media'
+  - 'create footer_block block content'
+  - 'create image media'
+  - 'create locations content'
+  - 'create media'
+  - 'create page content'
+  - 'create remote_video media'
+  - 'create text_blocks block content'
+  - 'create tips content'
+  - 'create url aliases'
+  - 'create video media'
+  - 'delete all taxonomy revisions'
+  - 'delete any audio media revisions'
+  - 'delete any basic block content'
+  - 'delete any basic block content revisions'
+  - 'delete any document media revisions'
+  - 'delete any footer_block block content'
+  - 'delete any footer_block block content revisions'
+  - 'delete any image media revisions'
+  - 'delete any remote_video media revisions'
+  - 'delete any text_blocks block content'
+  - 'delete any text_blocks block content revisions'
+  - 'delete any video media revisions'
+  - 'delete conditional fields'
+  - 'delete locations revisions'
+  - 'delete media'
+  - 'delete orphan revisions'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own locations content'
+  - 'delete own page content'
+  - 'delete own remote_video media'
+  - 'delete own tips content'
+  - 'delete own video media'
+  - 'delete page revisions'
+  - 'delete tips revisions'
+  - 'edit any basic block content'
+  - 'edit any footer_block block content'
+  - 'edit any text_blocks block content'
+  - 'edit behavior plugin settings'
+  - 'edit conditional fields'
+  - 'edit own audio media'
+  - 'edit own comments'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own locations content'
+  - 'edit own page content'
+  - 'edit own remote_video media'
+  - 'edit own tips content'
+  - 'edit own video media'
+  - 'export configuration'
+  - 'ignore 404 requests'
+  - 'import configuration'
+  - 'link to any page'
+  - 'masquerade as guides'
+  - 'masquerade as moderator'
+  - 'masquerade as tourist'
+  - 'masquerade as traveler'
+  - 'notify of path changes'
+  - 'revert all taxonomy revisions'
+  - 'revert any audio media revisions'
+  - 'revert any basic block content revisions'
+  - 'revert any document media revisions'
+  - 'revert any footer_block block content revisions'
+  - 'revert any image media revisions'
+  - 'revert any remote_video media revisions'
+  - 'revert any text_blocks block content revisions'
+  - 'revert any video media revisions'
+  - 'revert locations revisions'
+  - 'revert page revisions'
+  - 'revert tips revisions'
+  - 'skip antibot'
+  - 'switch users'
+  - 'synchronize configuration'
+  - 'update media'
+  - 'use exclude node title'
+  - 'use text format block_text'
+  - 'view all taxonomy revisions'
+  - 'view any basic block content history'
+  - 'view any footer_block block content history'
+  - 'view any text_blocks block content history'
+  - 'view conditional fields'
+  - 'view locations revisions'
+  - 'view migration messages'
+  - 'view own profile'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view own unpublished profile'
+  - 'view page revisions'
+  - 'view the administration theme'
+  - 'view tips revisions'
+  - 'view unpublished paragraphs'
+  - 'view update notifications'
+  - 'view vocabulary labels'

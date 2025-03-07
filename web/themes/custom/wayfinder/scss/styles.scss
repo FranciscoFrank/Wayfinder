@@ -1,0 +1,39 @@
+// Connecting font-size and line-height variables.
+@use "abstracts/variables/variables" as variables;
+
+// Connecting media queries.
+@use "abstracts/mixins/media" as media;
+
+// Connecting reset styles.
+@use "base/reset" as baseReset;
+
+// Connecting typography.
+@use "base/typography" as baseTypography;
+
+// Connecting styles for main templates.
+@use "templates/header" as templateHeader;
+@use "templates/main" as templateMain;
+@use "templates/footer" as templateFooter;
+
+// Connecting admin components.
+@use "components/admin-components/global-components" as adminGlobal;
+@use "components/admin-components/layout-builder-form";
+@use "components/admin-components/toolbar-menu-admin";
+
+// Connecting user components.
+
+// Connecting global components.
+@use "components/global-components" as Global;
+@use "components/buttons";
+@use "components/checkbox";
+@use "components/nav-components";
+@use "forms/trips-add-form";
+@use "forms/tips-add-form";
+
+// .
+@use "regions/header" as regionHeader;
+@use "regions/highlighted" as regionHighlighted;
+@use "regions/footer" as regionFooter;
+
+@use "pages/maintenance-page";
+@use "pages/copyright-page";

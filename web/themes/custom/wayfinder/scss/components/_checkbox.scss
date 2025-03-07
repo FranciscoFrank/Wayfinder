@@ -1,0 +1,32 @@
+@use "../abstracts/variables/variables" as *;
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid $main-accent-color;
+  border-radius: 4px;
+  margin: 0;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+input[type="checkbox"]:checked, input[type="checkbox"]:focus {
+  background-color: $main-accent-color;
+  border-color: $main-accent-color;
+}
+
+input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 4px rgba($main-accent-color, 0.5);
+}
+
+input[type="checkbox"]:checked::after {
+  color: white;
+  font-size: $font-size-base;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

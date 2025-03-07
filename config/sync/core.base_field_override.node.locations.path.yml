@@ -1,0 +1,20 @@
+uuid: 6595f770-a929-4002-ba78-167b72ed8c86
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.locations
+  module:
+    - path
+id: node.locations.path
+field_name: path
+entity_type: node
+bundle: locations
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

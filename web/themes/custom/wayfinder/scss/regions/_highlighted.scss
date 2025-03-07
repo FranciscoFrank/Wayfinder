@@ -1,0 +1,15 @@
+@use "../abstracts/variables/variables" as *;
+
+.highlighted {
+  position: fixed;
+  z-index: 502;
+  top: 95px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .region-highlighted {
+    .messages__wrapper {
+      transition: opacity 1s ease-out;
+    }
+  }
+}

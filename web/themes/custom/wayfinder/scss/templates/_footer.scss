@@ -1,0 +1,40 @@
+footer {
+  width: 100%;
+
+  .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1400px;
+    padding-inline: 20px;
+    margin: auto;
+
+    .footer__top {
+      width: 100%;
+
+      .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .footer__column {
+          width: 30%;
+        }
+      }
+    }
+
+    .footer__lower {
+      width: 100%;
+
+      .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .footer__column {
+          width: 30%;
+        }
+      }
+    }
+  }
+}

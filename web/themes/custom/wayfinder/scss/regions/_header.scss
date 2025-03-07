@@ -1,0 +1,48 @@
+@use "../abstracts/variables/variables" as *;
+
+header {
+  .header-wrapper {
+    .top-header {
+      padding-block: 15px;
+
+      .region-top-right-header {
+        display: flex;
+        justify-content: flex-end;
+
+        .menu--account {
+          ul.navbar-nav {
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            li.nav-item {
+              a.nav-link {
+                font-size: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-header {
+      padding-block: 20px;
+
+      .navbar-nav {
+        li {
+          padding-inline: 15px;
+
+          a.nav-link {
+            font-size: $font-size-lg;
+            font-weight: $bold;
+          }
+
+          a.nav-link.is-active {
+            color: $main-accent-color;
+          }
+        }
+      }
+    }
+  }
+}

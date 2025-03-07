@@ -1,0 +1,20 @@
+uuid: 2c37aa68-7444-4fba-9a21-0138d9f974bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tips
+id: node.tips.uid
+field_name: uid
+entity_type: node
+bundle: tips
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

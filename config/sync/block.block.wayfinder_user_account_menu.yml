@@ -1,0 +1,25 @@
+uuid: 04e5d624-4c22-4dfe-b3db-dce2439c8a5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - wayfinder
+id: wayfinder_user_account_menu
+theme: wayfinder
+region: top_right_header
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 21fe4109-eb68-4e7b-b6f3-703c63fa2099
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rating
+    - node.type.trips
+  module:
+    - starrating
+id: node.trips.field_rating
+field_name: field_rating
+entity_type: node
+bundle: trips
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  max_value: '10'
+field_type: starrating

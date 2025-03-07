@@ -1,0 +1,23 @@
+uuid: a01f8168-aabe-4503-8255-0f497b206438
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.additional_country.field_country
+    - paragraphs.paragraphs_type.additional_country
+  module:
+    - country
+id: paragraph.additional_country.default
+targetEntityType: paragraph
+bundle: additional_country
+mode: default
+content:
+  field_country:
+    type: country_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
