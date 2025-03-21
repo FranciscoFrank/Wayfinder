@@ -1,0 +1,60 @@
+uuid: eadaa4f4-b97d-488b-bf15-6cf10b595ba0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header-navigation
+  module:
+    - cheeseburger_menu
+  theme:
+    - wayfinder
+id: wayfinder_cheeseburger_menu
+theme: wayfinder
+region: top_right_header
+weight: -2
+provider: null
+plugin: cheeseburger_menu
+settings:
+  id: cheeseburger_menu
+  label: 'Cheeseburger menu'
+  label_display: '0'
+  provider: cheeseburger_menu
+  default_css: true
+  default_js: true
+  hidden: true
+  parent_menu_as_link: false
+  show_navigation: false
+  invoke_hooks: false
+  track_active_trail: true
+  left_side_background_color: '#fafafa'
+  left_side_background_opacity: '1'
+  left_side_text_color: '#191919'
+  left_side_text_opacity: '1'
+  right_side_background_color: '#fafafa'
+  right_side_background_opacity: '1'
+  right_side_text_color: '#191919'
+  right_side_text_opacity: '1'
+  trigger_color: '#191919'
+  trigger_opacity: '1'
+  trigger_background_color: '#fafafa'
+  trigger_background_opacity: '1'
+  scrollbar_color: '#fafafa'
+  scrollbar_opacity: '1'
+  menus:
+    header-navigation:
+      id: header-navigation
+      menu_type: menu
+      weight: -99
+      settings:
+        max_depth: 0
+        initial_visibility_level: 1
+        default_expanded: false
+        show_title_in_navigation: false
+        collapsible_title: false
+        title_default_expanded: true
+        show_title_above_menu: false
+        override_title: false
+        title_override: ''
+        show_links_in_navigation: false
+        icon: ''
+visibility: {  }

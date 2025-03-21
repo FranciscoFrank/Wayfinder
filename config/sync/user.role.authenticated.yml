@@ -8,6 +8,10 @@ dependencies:
     - filter.format.webform_default
   module:
     - comment
+    - commerce_checkout
+    - commerce_order
+    - commerce_payment
+    - commerce_product
     - contact
     - exclude_node_title
     - file
@@ -16,6 +20,7 @@ dependencies:
     - media
     - node
     - paragraphs_type_permissions
+    - search
     - system
 _core:
   default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
@@ -24,19 +29,26 @@ label: 'Authenticated user'
 weight: -9
 is_admin: false
 permissions:
+  - 'access checkout'
   - 'access comments'
   - 'access content'
   - 'access fontawesome additional settings'
   - 'access site-wide contact form'
   - 'delete own files'
   - 'edit own comments'
+  - 'manage own commerce_payment_method'
   - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
   - 'use exclude node title'
   - 'use text format description'
   - 'use text format short_description'
   - 'use text format webform_default'
+  - 'view commerce_product'
   - 'view media'
+  - 'view own commerce_order'
   - 'view own unpublished content'
   - 'view paragraph content additional_country'
   - 'view paragraph content additional_image'
   - 'view paragraph content additional_text'
+  - 'view paragraph content svg_image'

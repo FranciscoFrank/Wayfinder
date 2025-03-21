@@ -1,0 +1,43 @@
+uuid: c6a5fdd0-ade0-4ffb-ab4c-7397d8d7c07c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block
+    - field.storage.block_content.field_svg_image
+    - paragraphs.paragraphs_type.svg_image
+  module:
+    - entity_reference_revisions
+id: block_content.footer_block.field_svg_image
+field_name: field_svg_image
+entity_type: block_content
+bundle: footer_block
+label: 'SVG Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      svg_image: svg_image
+    negate: 0
+    target_bundles_drag_drop:
+      additional_country:
+        weight: 6
+        enabled: false
+      additional_image:
+        weight: 7
+        enabled: false
+      additional_text:
+        weight: 8
+        enabled: false
+      map:
+        weight: 9
+        enabled: false
+      svg_image:
+        weight: 10
+        enabled: true
+field_type: entity_reference_revisions

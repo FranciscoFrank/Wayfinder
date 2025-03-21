@@ -7,6 +7,9 @@ core_version_requirement: ^10 || ^11
 libraries:
   - wayfinder/wayfinder
 
+libraries-override:
+
+
 regions:
   top_left_header: 'Top Left Header'
   top_middle_header: 'Top Middle Header'

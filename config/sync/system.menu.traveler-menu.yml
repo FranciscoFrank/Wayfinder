@@ -1,8 +1,0 @@
-uuid: 02e7273c-7155-4c8b-983d-5bdc7ef3bb2c
-langcode: en
-status: true
-dependencies: {  }
-id: traveler-menu
-label: 'Traveler menu'
-description: ''
-locked: false

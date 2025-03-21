@@ -1,0 +1,10 @@
+uuid: 68e6d8c8-9fbf-4700-b691-db3f6de6d703
+langcode: en
+status: true
+dependencies: {  }
+id: svg_image
+label: 'SVG Image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -56,7 +56,6 @@ dependencies:
     - system
     - taxonomy
     - toolbar
-    - update
     - views_ui
 id: developer
 label: Developer
@@ -238,5 +237,4 @@ permissions:
   - 'view the administration theme'
   - 'view tips revisions'
   - 'view unpublished paragraphs'
-  - 'view update notifications'
   - 'view vocabulary labels'

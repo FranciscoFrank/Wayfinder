@@ -1,0 +1,43 @@
+uuid: e94c0245-3f93-40ea-929c-3b8d71b51999
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_information
+    - field.storage.block_content.field_map
+    - paragraphs.paragraphs_type.map
+  module:
+    - entity_reference_revisions
+id: block_content.contact_information.field_map
+field_name: field_map
+entity_type: block_content
+bundle: contact_information
+label: Map
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      map: map
+    negate: 0
+    target_bundles_drag_drop:
+      additional_country:
+        weight: 6
+        enabled: false
+      additional_image:
+        weight: 7
+        enabled: false
+      additional_text:
+        weight: 8
+        enabled: false
+      map:
+        weight: 9
+        enabled: true
+      svg_image:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

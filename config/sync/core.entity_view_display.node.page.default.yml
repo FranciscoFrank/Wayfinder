@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.body
     - field.field.node.page.layout_builder__layout
     - node.type.page
   module:
@@ -43,6 +44,7 @@ content:
     weight: 101
     region: content
 hidden:
+  body: true
   breadcrumbs: true
   langcode: true
   layout_builder__layout: true

@@ -1,0 +1,8 @@
+wayfinder_api.node_counts:
+  path: '/api/wayfinder/node-counts'
+  defaults:
+    _controller: '\Drupal\wayfinder_api\Controller\WayfinderApiController::getNodeCounts'
+    _title: 'Node Counts'
+  requirements:
+    _access: 'TRUE'
+  methods: [GET]

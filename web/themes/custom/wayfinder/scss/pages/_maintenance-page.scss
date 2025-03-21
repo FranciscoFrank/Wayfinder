@@ -1,4 +1,5 @@
 @use "../abstracts/variables/variables" as *;
+@use "../abstracts/mixins/media" as *;
 
 main:has(.maintenance) {
   background-color: $main-bg-color;
@@ -8,24 +9,66 @@ main:has(.maintenance) {
 .page-wrapper.maintenance {
   margin-inline: auto;
 
-
   .maintenance-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     border: 3px solid $main-accent-color;
     border-radius: 15px;
     padding-inline: 25px;
     padding-block: 15px;
 
     .maintenance-image {
-      display: flex;
-      justify-content: center;
-      height: 450px;
+      height: 300px;
 
       img {
-        position: relative;
-        width: 200px;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .maintenance-message {
+      margin-left: 35px;
+      height: fit-content;
+    }
+  }
+
+  @include breakpoint(l-large-screen) {
+    .maintenance-content {
+      flex-direction: column;
+
+      .maintenance-image {
+        height: 350px;
+      }
+
+      .maintenance-message {
+        margin-left: 0;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  @include breakpoint(medium-screen) {
+    .maintenance-content {
+      .maintenance-image {
+        height: 300px;
+      }
+    }
+  }
+
+  @include breakpoint(s-medium-screen) {
+    .maintenance-content {
+      .maintenance-image {
+        height: 250px;
+      }
+    }
+  }
+
+  @include breakpoint(s-screen) {
+    .maintenance-content {
+      .maintenance-image {
         height: 200px;
-        border-radius: 50%;
-        overflow: hidden;
       }
     }
   }

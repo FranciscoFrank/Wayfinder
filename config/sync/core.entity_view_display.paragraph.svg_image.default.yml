@@ -1,0 +1,33 @@
+uuid: 22f2b305-7426-45c2-bc5e-aa14b859e3e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.svg_image.field_svg_image
+    - paragraphs.paragraphs_type.svg_image
+  module:
+    - svg_image_field
+id: paragraph.svg_image.default
+targetEntityType: paragraph
+bundle: svg_image
+mode: default
+content:
+  field_svg_image:
+    type: svg_image_field_formatter
+    label: hidden
+    settings:
+      inline: false
+      apply_dimensions: false
+      width: 25
+      height: 25
+      enable_alt: false
+      enable_title: false
+      link: ''
+      force_fill: false
+      sanitize: true
+      sanitize_remote: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

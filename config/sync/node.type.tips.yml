@@ -4,10 +4,13 @@ status: true
 dependencies:
   module:
     - menu_ui
+    - type_tray
 third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
+  type_tray:
+    existing_nodes_link_text: 'View existing <em class="placeholder">Tips</em> content'
 name: Tips
 type: tips
 description: 'Use <em>Tips</em> to give useful advice to other travelers, such as <em>"What documents should you take with you when traveling"</em>.'

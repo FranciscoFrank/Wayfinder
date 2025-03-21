@@ -1,0 +1,7 @@
+name: Wayfinder API
+type: module
+description: 'The module creates special endpoints for convenience in using them for third-party service development.'
+core_version_requirement: ^10 || ^11
+package: Wayfinder API
+dependencies:
+  - drupal:node

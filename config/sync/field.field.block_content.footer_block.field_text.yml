@@ -1,0 +1,43 @@
+uuid: 1cd0ff47-9f04-42d2-ad45-6cdd0687f3c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block
+    - field.storage.block_content.field_text
+    - paragraphs.paragraphs_type.additional_text
+  module:
+    - entity_reference_revisions
+id: block_content.footer_block.field_text
+field_name: field_text
+entity_type: block_content
+bundle: footer_block
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      additional_text: additional_text
+    negate: 0
+    target_bundles_drag_drop:
+      additional_country:
+        weight: 4
+        enabled: false
+      additional_image:
+        weight: 5
+        enabled: false
+      additional_text:
+        weight: 6
+        enabled: true
+      map:
+        weight: 8
+        enabled: false
+      svg_image:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

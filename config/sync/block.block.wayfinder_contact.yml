@@ -1,0 +1,25 @@
+uuid: 6293515e-1857-420e-852b-23401e7021fa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_information:54d7f85e-0f11-455f-8508-ffb17a2a5818'
+  module:
+    - block_content
+  theme:
+    - wayfinder
+id: wayfinder_contact
+theme: wayfinder
+region: third_column_top_footer
+weight: -4
+provider: null
+plugin: 'block_content:54d7f85e-0f11-455f-8508-ffb17a2a5818'
+settings:
+  id: 'block_content:54d7f85e-0f11-455f-8508-ffb17a2a5818'
+  label: Contact
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

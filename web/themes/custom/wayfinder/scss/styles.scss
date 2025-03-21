@@ -10,11 +10,6 @@
 // Connecting typography.
 @use "base/typography" as baseTypography;
 
-// Connecting styles for main templates.
-@use "templates/header" as templateHeader;
-@use "templates/main" as templateMain;
-@use "templates/footer" as templateFooter;
-
 // Connecting admin components.
 @use "components/admin-components/global-components" as adminGlobal;
 @use "components/admin-components/layout-builder-form";
@@ -29,6 +24,9 @@
 @use "components/nav-components";
 @use "forms/trips-add-form";
 @use "forms/tips-add-form";
+
+// .
+@use "layouts/top-footer" as topFooter;
 
 // .
 @use "regions/header" as regionHeader;

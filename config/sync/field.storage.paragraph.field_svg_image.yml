@@ -1,0 +1,28 @@
+uuid: 25043fab-b827-49a1-afc8-7d0a087e8936
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+    - svg_image_field
+id: paragraph.field_svg_image
+field_name: field_svg_image
+entity_type: paragraph
+type: svg_image_field
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+module: svg_image_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

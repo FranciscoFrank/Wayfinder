@@ -3,6 +3,8 @@ _core:
 nid_list:
   - 1
   - 9
+  - 10
+  - 3
 translation_sync: true
 search: false
 type: hidden

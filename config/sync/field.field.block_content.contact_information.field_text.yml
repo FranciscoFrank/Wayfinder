@@ -1,0 +1,43 @@
+uuid: d4d70f54-0790-43b5-93e5-ed618ace1c99
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_information
+    - field.storage.block_content.field_text
+    - paragraphs.paragraphs_type.additional_text
+  module:
+    - entity_reference_revisions
+id: block_content.contact_information.field_text
+field_name: field_text
+entity_type: block_content
+bundle: contact_information
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      additional_text: additional_text
+    negate: 0
+    target_bundles_drag_drop:
+      additional_country:
+        weight: 4
+        enabled: false
+      additional_image:
+        weight: 5
+        enabled: false
+      additional_text:
+        weight: 6
+        enabled: true
+      map:
+        weight: 8
+        enabled: false
+      svg_image:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

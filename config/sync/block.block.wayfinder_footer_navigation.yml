@@ -1,0 +1,25 @@
+uuid: f2e89b84-0292-413f-9760-63f5207a4346
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-navigation
+  module:
+    - system
+  theme:
+    - wayfinder
+id: wayfinder_footer_navigation
+theme: wayfinder
+region: first_column_top_footer
+weight: -4
+provider: null
+plugin: 'system_menu_block:footer-navigation'
+settings:
+  id: 'system_menu_block:footer-navigation'
+  label: 'Footer navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,10 @@
+drupal.wayfinder_api.admin:
+  js:
+    js/wayfinder_api.js: {}
+  css:
+    theme:
+      css/wayfinder_api.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings

@@ -1,0 +1,25 @@
+uuid: cb65571a-1d11-4d9a-8c10-89b0ba772e8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.wayfinder_cheeseburger_menu
+  module:
+    - cheeseburger_menu
+  theme:
+    - wayfinder
+id: wayfinder_cheeseburger_menu_trigger
+theme: wayfinder
+region: top_right_header
+weight: -3
+provider: null
+plugin: cheeseburger_menu_trigger
+settings:
+  id: cheeseburger_menu_trigger
+  label: 'Cheeseburger menu trigger'
+  label_display: '0'
+  provider: cheeseburger_menu
+  block_to_trigger: wayfinder_cheeseburger_menu
+  breakpoints: {  }
+  custom_media_query: null
+visibility: {  }

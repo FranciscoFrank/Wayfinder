@@ -1,9 +1,26 @@
 @use "../abstracts/variables/variables" as *;
 
 header {
+  width: 100%;
+
   .header-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    padding-inline: 20px;
+    margin: auto;
+
     .top-header {
       padding-block: 15px;
+
+      .header-columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .top-header__column {
+          width: 30%;
+        }
+      }
 
       .region-top-right-header {
         display: flex;

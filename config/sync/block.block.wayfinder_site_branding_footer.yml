@@ -1,0 +1,23 @@
+uuid: 8d7ba726-a5f3-48af-936c-2ae50fec6053
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wayfinder
+id: wayfinder_site_branding_footer
+theme: wayfinder
+region: first_column_lower_footer
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

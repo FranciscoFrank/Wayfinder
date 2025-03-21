@@ -1,4 +1,4 @@
-uuid: a5aa2b3c-d53d-4cab-abeb-f643f65c78da
+uuid: d71f58da-724f-4090-8294-f04ad2c59d71
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: wayfinder_social_media_links
 theme: wayfinder
 region: third_column_lower_footer
-weight: 0
+weight: -4
 provider: null
 plugin: social_media_links_block
 settings:
@@ -167,7 +167,7 @@ settings:
     show_name: 0
     suggestion: ''
   link_attributes:
-    target: _blank
+    target: '<none>'
     rel: '<none>'
   iconset:
     style: 'fontawesome:2x'

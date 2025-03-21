@@ -1,0 +1,37 @@
+uuid: b8f25f03-7d4b-4451-8647-a6975a245fab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.map.field_map
+    - paragraphs.paragraphs_type.map
+  module:
+    - simple_gmap
+id: paragraph.map.default
+targetEntityType: paragraph
+bundle: map
+mode: default
+content:
+  field_map:
+    type: simple_gmap
+    label: hidden
+    settings:
+      include_map: true
+      include_static_map: false
+      include_link: true
+      include_text: false
+      iframe_height: '200'
+      iframe_width: '200'
+      iframe_title: '<iframe src="https://www.google.com/maps/embed?pb=!4v1741625798950!6m8!1m7!1sFZlfd0t4XDOHBqAOBZ3f8A!2m2!1d47.89466808724701!2d1.'
+      static_scale: 2
+      zoom_level: 14
+      link_text: 'Large map'
+      map_type: p
+      langcode: en
+      apikey: ''
+      alt_text: 'Map location: %address'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

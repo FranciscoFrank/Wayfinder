@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: QyMU4r3arwQQZoSVWKz-5imWdf-_dkvLYCDgQpOZQVM
+enabled_sources:
+  - local_modules
+  - drupal_core
+  - drupalorg_jsonapi
+allow_ui_install: false
+allowed_projects: {  }
+max_selections: null

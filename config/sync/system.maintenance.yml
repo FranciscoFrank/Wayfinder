@@ -1,4 +1,4 @@
 _core:
   default_config_hash: 1SNdA25INsV5YjlgAJtfC-6AM8VcWe_00xneMLb2yFg
 langcode: en
-message: ''
+message: "<h1>Maintenance</h1>\r\n<p>We apologize for the inconvenience, but the site is currently undergoing maintenance. It will be fully operational again as soon as the work is completed. Thank you for your patience and understanding.</p>\r\n<p>Best regards,<br>\r\nThe Wayfinder Development and Administration Team.</p>"

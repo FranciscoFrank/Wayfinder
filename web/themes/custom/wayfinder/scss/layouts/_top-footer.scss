@@ -1,0 +1,22 @@
+@use "../abstracts/variables/variables" as *;
+
+footer {
+  .footer-wrapper {
+    .footer__top {
+      .footer-columns {
+        .footer__column {
+          &:nth-child(2) {
+            .field--name-field-svg-image {
+              display: flex;
+              justify-content: center;
+
+              img {
+                height: 250px
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

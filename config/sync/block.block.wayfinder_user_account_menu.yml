@@ -1,4 +1,4 @@
-uuid: 04e5d624-4c22-4dfe-b3db-dce2439c8a5a
+uuid: f081994a-925c-4c0a-a0e6-303b1d844cd2
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
 id: wayfinder_user_account_menu
 theme: wayfinder
 region: top_right_header
-weight: 0
+weight: -4
 provider: null
 plugin: 'system_menu_block:account'
 settings:

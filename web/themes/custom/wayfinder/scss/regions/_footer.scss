@@ -1,41 +1,71 @@
 @use "../abstracts/variables/variables" as *;
 
 footer {
+  width: 100%;
+
   .footer-wrapper {
-    .footer__lower {
-      .footer__column {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1400px;
+    padding-inline: 20px;
+    margin: auto;
+
+    .footer__top {
+      width: 100%;
+
+      .footer-columns {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        width: 100%;
 
-        &:nth-child(2) {
-          justify-content: center;
+        .footer__column {
+          width: 30%;
         }
+      }
+    }
 
-        &:nth-child(3) {
-          justify-content: flex-end;
-        }
+    .footer__lower {
+      width: 100%;
+      .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
 
-        .region-second-column-lower-footer {
+        .footer__column {
+          display: flex;
           align-items: center;
 
-          .block-block-content {
-            .field--name-body {
-              p {
-                margin: 0;
+          &:nth-child(2) {
+            justify-content: center;
+          }
 
-                a {
-                  font-size: $font-size-lg;
-                  text-transform: uppercase;
-                  font-weight: $bold;
+          &:nth-child(3) {
+            justify-content: flex-end;
+          }
+
+          .region-second-column-lower-footer {
+            align-items: center;
+
+            .block-block-content {
+              .field--name-body {
+                p {
+                  margin: 0;
+
+                  a {
+                    font-size: $font-size-lg;
+                    text-transform: uppercase;
+                    font-weight: $bold;
+                  }
                 }
               }
             }
           }
-        }
 
-        .region-third-column-lower-footer {
-          display: flex;
-          align-items: center;
+          .region-third-column-lower-footer {
+            display: flex;
+            align-items: center;
+          }
         }
       }
     }

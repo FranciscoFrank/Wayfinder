@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_image
+    - field.field.user.user.user_picture
   module:
     - layout_builder
     - layout_discovery
@@ -23,9 +25,14 @@ third_party_settings:
             region: content
             configuration:
               id: 'extra_field_block:user:user:member_for'
+              label: 'Member for'
               label_display: '0'
+              provider: layout_builder
               context_mapping:
-                entity: layout_builder.entity
+                entity: '@user.current_user_context:current_user'
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
             weight: 1
             additional: {  }
           2f143155-f9d3-4998-b0b9-cbf89b7c69c6:
@@ -33,16 +40,25 @@ third_party_settings:
             region: content
             configuration:
               id: 'field_block:user:user:field_image'
+              label: Image
               label_display: '0'
+              provider: layout_builder
               context_mapping:
-                entity: layout_builder.entity
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
               formatter:
-                type: entity_reference_entity_view
-                label: above
+                type: media_thumbnail
+                label: hidden
                 settings:
-                  view_mode: default
-                  link: false
-                third_party_settings: {  }
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings:
+                  lazy:
+                    lazy_image: '0'
+                    placeholder_style: ''
+                    data_uri: false
             weight: 2
             additional: {  }
           72a716e3-1ad7-4a54-b0b4-eb1f6d89ff79:
@@ -50,9 +66,14 @@ third_party_settings:
             region: content
             configuration:
               id: 'extra_field_block:user:user:masquerade'
+              label: Masquerade
               label_display: '0'
+              provider: layout_builder
               context_mapping:
-                entity: layout_builder.entity
+                entity: '@user.current_user_context:current_user'
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
             weight: 3
             additional: {  }
         third_party_settings: {  }
@@ -84,6 +105,8 @@ content:
     region: content
 hidden:
   breadcrumbs: true
+  commerce_remote_id: true
   customer_profiles: true
   langcode: true
   search_api_excerpt: true
+  user_picture: true

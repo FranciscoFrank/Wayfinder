@@ -1,7 +1,0 @@
-name: 'AdvAgg CSS/JS Validator'
-description: 'Validate the CSS and JS files used in Aggregation for syntax errors.'
-package: 'Advanced CSS/JS Aggregation'
-core_version_requirement: ^10 || ^11
-type: module
-dependencies:
-  - advagg:advagg
