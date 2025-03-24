@@ -4,7 +4,7 @@ langcode: en
 uuid: 8dda47aa-c180-4d76-85b5-2568b6aaa0d2
 name: Wayfinder
 mail: kolia.boychak@gmail.com
-slogan: 'Your Story, Our Map - Exploring the World Together'
+slogan: 'Travel. Explore. Inspire'
 page:
   403: /node/8
   404: /node/7

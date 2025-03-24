@@ -6,8 +6,7 @@ wayfinder:
 
   js:
     js/global-script.js: {}
-    js/user-menu.js: {}
 
   dependencies:
     - core/drupal
-    - core/jquery
+
