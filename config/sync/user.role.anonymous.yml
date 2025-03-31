@@ -10,7 +10,6 @@ dependencies:
     - exclude_node_title
     - media
     - paragraphs_type_permissions
-    - search
     - system
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
@@ -23,7 +22,6 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
-  - 'search content'
   - 'use exclude node title'
   - 'view commerce_product'
   - 'view media'

@@ -17,7 +17,7 @@ span, p {
 
 span, p, h1, h2, h3, h4, h5, h6, a, li, ul {
   &::selection {
-    background-color: rgba($main-accent-color, 15%);
+    background-color: rgba($main-accent-color, 45%);
   }
 }
 
