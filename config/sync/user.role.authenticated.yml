@@ -49,4 +49,5 @@ permissions:
   - 'view paragraph content additional_country'
   - 'view paragraph content additional_image'
   - 'view paragraph content additional_text'
+  - 'view paragraph content map'
   - 'view paragraph content svg_image'

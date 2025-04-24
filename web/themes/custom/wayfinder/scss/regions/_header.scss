@@ -19,23 +19,22 @@ header {
 
         .top-header__column {
           width: 30%;
-        }
-      }
 
-      .region-top-right-header {
-        display: flex;
-        justify-content: flex-end;
-
-        .menu--account {
-          ul.navbar-nav {
-            width: fit-content;
+          .region-top-right-header {
             display: flex;
-            flex-direction: row;
             justify-content: flex-end;
 
-            li.nav-item {
-              a.nav-link {
-                font-size: 32px;
+            .menu--account {
+              ul.navbar-nav {
+                width: fit-content;
+                display: flex;
+                flex-direction: row;
+
+                li.nav-item {
+                  a.nav-link {
+                    font-size: 32px;
+                  }
+                }
               }
             }
           }

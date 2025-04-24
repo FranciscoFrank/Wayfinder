@@ -1,0 +1,90 @@
+uuid: e09bc161-0c64-42fc-88f3-ce59cdb27222
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.trips.field_description
+    - field.field.node.trips.field_locations
+    - field.field.node.trips.field_media
+    - field.field.node.trips.field_rating
+    - field.field.node.trips.field_short_description
+    - field.field.node.trips.field_trips_type
+    - node.type.trips
+  module:
+    - layout_builder
+    - starrating
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.trips.rss
+targetEntityType: node
+bundle: trips
+mode: rss
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_locations:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_rating:
+    type: starrating
+    label: above
+    settings:
+      fill_blank: 0
+      icon_type: star
+      icon_color: 1
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_short_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_trips_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  breadcrumbs: true
+  langcode: true
+  search_api_excerpt: true

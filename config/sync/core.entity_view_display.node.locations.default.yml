@@ -3,20 +3,85 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.locations.field_additional_checkbox
+    - field.field.node.locations.field_additional_country
+    - field.field.node.locations.field_country
+    - field.field.node.locations.field_description
+    - field.field.node.locations.field_locations_type
+    - field.field.node.locations.field_media
+    - field.field.node.locations.field_short_description
     - node.type.locations
   module:
+    - country
+    - entity_reference_revisions
+    - text
     - user
 id: node.locations.default
 targetEntityType: node
 bundle: locations
 mode: default
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_additional_checkbox:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_additional_country:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
   field_country:
     type: country_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 106
+    weight: 105
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_locations_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_short_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
     region: content
   links:
     settings: {  }

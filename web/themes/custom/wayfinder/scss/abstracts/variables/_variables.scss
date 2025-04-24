@@ -1,4 +1,4 @@
-// .
+// Font sizes used throughout the project for consistent typography.
 $font-size-xs: 12px;
 $font-size-sm: 14px;
 $font-size-base: 16px;
@@ -10,25 +10,13 @@ $font-size-4xl: 32px;
 $font-size-5xl: 36px;
 $font-size-6xl: 42px;
 
-// .
-$line-height-xs: 16px;
-$line-height-sm: 18px;
-$line-height-base: 20px;
-$line-height-lg: 22px;
-$line-height-xl: 24px;
-$line-height-2xl: 28px;
-$line-height-3xl: 32px;
-$line-height-4xl: 36px;
-$line-height-5xl: 40px;
-$line-height-6xl: 44px;
+// Project color palette for backgrounds, accents, and text.
+$main-bg-color: #dad7cd;
+$main-accent-color: #a3b18a;
+$second-accent-color: #3a5a40;
+$main-text-color: #344e41;
 
-// .
-$main-bg-color: #FFFDF7;
-$main-accent-color: #84BC9C;
-$second-accent-color: #2CA58D;
-$main-text-color: #0A2342;
-
-// .
+// Font weight values for different text emphasis.
 $normal: 400;
 $medium: 500;
 $bold: 700;

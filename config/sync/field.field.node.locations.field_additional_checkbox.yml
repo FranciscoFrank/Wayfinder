@@ -1,0 +1,21 @@
+uuid: e1c27fcd-5664-4241-9ee9-601f4d02cc9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_checkbox
+    - node.type.locations
+id: node.locations.field_additional_checkbox
+field_name: field_additional_checkbox
+entity_type: node
+bundle: locations
+label: 'Additional Country Checkbox'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

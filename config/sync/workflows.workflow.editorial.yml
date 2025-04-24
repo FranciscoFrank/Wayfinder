@@ -2,6 +2,11 @@ uuid: 8da6069c-a5c0-49f0-afe5-a3183ff8c65f
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.locations
+    - node.type.news
+    - node.type.tips
+    - node.type.trips
   module:
     - content_moderation
 _core:
@@ -11,14 +16,9 @@ label: Editorial
 type: content_moderation
 type_settings:
   states:
-    archived:
-      label: Archived
-      weight: 5
-      published: false
-      default_revision: true
     draft:
       label: Draft
-      weight: -5
+      weight: -2
       published: false
       default_revision: false
     published:
@@ -26,38 +26,45 @@ type_settings:
       weight: 0
       published: true
       default_revision: true
-  transitions:
-    archive:
-      label: Archive
-      from:
-        - published
-      to: archived
-      weight: 2
-    archived_draft:
-      label: 'Restore to Draft'
-      from:
-        - archived
-      to: draft
-      weight: 3
-    archived_published:
-      label: Restore
-      from:
-        - archived
-      to: published
-      weight: 4
-    create_new_draft:
-      label: 'Create New Draft'
-      from:
-        - draft
-        - published
-      to: draft
-      weight: 0
-    publish:
-      label: Publish
-      from:
-        - draft
-        - published
-      to: published
+    review:
+      label: Review
+      weight: -1
+      published: false
+      default_revision: false
+    unpublished:
+      label: Unpublished
       weight: 1
-  entity_types: {  }
+      published: false
+      default_revision: false
+  transitions:
+    draft:
+      label: Draft
+      from:
+        - draft
+      to: draft
+      weight: -2
+    published:
+      label: Published
+      from:
+        - review
+      to: published
+      weight: 0
+    review:
+      label: Review
+      from:
+        - draft
+      to: review
+      weight: -1
+    unpublished:
+      label: Unpublished
+      from:
+        - review
+      to: unpublished
+      weight: 1
+  entity_types:
+    node:
+      - locations
+      - news
+      - tips
+      - trips
   default_moderation_state: draft

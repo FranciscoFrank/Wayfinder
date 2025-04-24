@@ -1,0 +1,28 @@
+uuid: 45f54e9d-d636-4708-9b7a-f3ab1bdad5ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - micon_content_type
+    - type_tray
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  micon_content_type:
+    icon: fa-newspaper-o
+  type_tray:
+    type_category: _none
+    type_thumbnail: ''
+    type_icon: ''
+    type_description: ''
+    existing_nodes_link_text: ''
+    type_weight: 0
+name: News
+type: news
+description: null
+help: null
+new_revision: true
+preview_mode: 2
+display_submitted: false

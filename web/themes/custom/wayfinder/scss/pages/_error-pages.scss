@@ -1,0 +1,71 @@
+@use "../abstracts/variables/variables" as *;
+@use "../abstracts/mixins/media" as *;
+
+.page-not-found-text, .forbidden-text  {
+  padding-bottom: 25px;
+}
+
+#page-not-found, #forbidden {
+  .field--type-entity-reference-revisions {
+    * > p {
+      margin-bottom: 0;
+    }
+
+    * > ul {
+      margin-bottom: 0;
+    }
+
+    .error-title {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 45px;
+
+      .field--name-field-text {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          width: fit-content;
+
+          &:nth-child(1) {
+            font-size: 82px;
+          }
+
+          &:nth-child(2) {
+            font-size: $font-size-4xl;
+          }
+        }
+      }
+    }
+
+    .fix-error {
+      .field--name-field-text {
+        p {
+          padding-bottom: 5px;
+        }
+
+        ul {
+          list-style: circle;
+        }
+      }
+    }
+
+    .contact-us {
+      display: flex;
+      justify-content: center;
+
+      .field--name-field-text {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          width: fit-content;
+        }
+      }
+    }
+  }
+}

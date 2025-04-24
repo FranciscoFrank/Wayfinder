@@ -1,0 +1,8 @@
+uuid: 7e7b7b36-1de6-44e5-9167-5780a2e39ec3
+langcode: und
+status: true
+dependencies: {  }
+id: search_index_date
+label: 'Search index date'
+locked: false
+pattern: 'd - m - o'

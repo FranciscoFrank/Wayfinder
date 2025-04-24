@@ -142,12 +142,27 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
+          b0102eec-637f-4a32-9332-f7280a04636c:
+            uuid: b0102eec-637f-4a32-9332-f7280a04636c
+            region: content
+            configuration:
+              id: 'extra_field_block:node:trips:content_moderation_control'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 8
+            additional: {  }
         third_party_settings: {  }
 id: node.trips.default
 targetEntityType: node
 bundle: trips
 mode: default
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_description:
     type: text_default
     label: above

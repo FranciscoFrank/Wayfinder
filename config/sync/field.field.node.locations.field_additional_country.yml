@@ -1,0 +1,43 @@
+uuid: fb2a7bb9-2265-4caf-8995-dae691823a22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_country
+    - node.type.locations
+    - paragraphs.paragraphs_type.additional_country
+  module:
+    - entity_reference_revisions
+id: node.locations.field_additional_country
+field_name: field_additional_country
+entity_type: node
+bundle: locations
+label: 'Additional Country'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      additional_country: additional_country
+    negate: 0
+    target_bundles_drag_drop:
+      additional_country:
+        weight: 6
+        enabled: true
+      additional_image:
+        weight: 7
+        enabled: false
+      additional_text:
+        weight: 8
+        enabled: false
+      map:
+        weight: 9
+        enabled: false
+      svg_image:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

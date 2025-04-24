@@ -33,8 +33,13 @@ footer {
         width: 100%;
 
         .footer__column {
+          width: 30%;
           display: flex;
           align-items: center;
+
+          &:nth-child(1) {
+            justify-content: flex-start;
+          }
 
           &:nth-child(2) {
             justify-content: center;
@@ -45,6 +50,7 @@ footer {
           }
 
           .region-second-column-lower-footer {
+            height: fit-content;
             align-items: center;
 
             .block-block-content {

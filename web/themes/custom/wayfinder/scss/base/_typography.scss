@@ -12,10 +12,10 @@ html, body, span, p {
 }
 
 span, p {
-  line-height: $line-height-base;
+  line-height: 100%;
 }
 
-span, p, h1, h2, h3, h4, h5, h6, a, li, ul {
+span, p, h1, h2, h3, h4, h5, h6, a, li, ul, .site-slogan {
   &::selection {
     background-color: rgba($main-accent-color, 45%);
   }
@@ -27,37 +27,37 @@ a {
 
 h1 {
   font-size: $font-size-4xl;
-  line-height: $line-height-4xl;
+  line-height: 100%;
   font-weight: $extra-bold;
 }
 
 h2 {
   font-size: $font-size-3xl;
-  line-height: $line-height-3xl;
+  line-height: 100%;
   font-weight: $extra-bold;
 }
 
 h3 {
   font-size: $font-size-2xl;
-  line-height: $line-height-2xl;
+  line-height: 100%;
   font-weight: $bold;
 }
 
 h4 {
   font-size: $font-size-xl;
-  line-height: $line-height-xl;
+  line-height: 100%;
   font-weight: $medium;
 }
 
 h5 {
   font-size: $font-size-lg;
-  line-height: $line-height-lg;
+  line-height: 100%;
   font-weight: $medium;
 }
 
 h6 {
   font-size: $font-size-base;
-  line-height: $line-height-base;
+  line-height: 100%;
   font-weight: $normal;
 }
 

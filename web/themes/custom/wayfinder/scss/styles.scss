@@ -26,12 +26,11 @@
 @use "forms/tips-add-form";
 
 // .
-@use "layouts/top-footer" as topFooter;
-
-// .
 @use "regions/header" as regionHeader;
 @use "regions/highlighted" as regionHighlighted;
 @use "regions/footer" as regionFooter;
 
+// .
 @use "pages/maintenance-page";
+@use "pages/error-pages";
 @use "pages/copyright-page";

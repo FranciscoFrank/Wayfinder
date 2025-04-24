@@ -1,10 +1,18 @@
 uuid: b7eb3bd6-bed9-4c7e-bd61-747ef22ec483
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - micon_paragraphs
+    - paragraphs_class
+third_party_settings:
+  micon_paragraphs:
+    icon: ''
 id: additional_text
 label: 'Additional Text'
 icon_uuid: null
 icon_default: null
 description: 'Use <em>Additional Text</em> when you want to add more text to your content'
-behavior_plugins: {  }
+behavior_plugins:
+  paragraphs_class_paragraph_class:
+    enabled: true

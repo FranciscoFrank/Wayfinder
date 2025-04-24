@@ -16,9 +16,9 @@ content:
     type: simple_gmap
     label: hidden
     settings:
-      include_map: true
+      include_map: false
       include_static_map: false
-      include_link: true
+      include_link: false
       include_text: false
       iframe_height: '200'
       iframe_width: '200'
@@ -26,7 +26,7 @@ content:
       static_scale: 2
       zoom_level: 14
       link_text: 'Large map'
-      map_type: p
+      map_type: m
       langcode: en
       apikey: ''
       alt_text: 'Map location: %address'

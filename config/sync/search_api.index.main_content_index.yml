@@ -1,0 +1,42 @@
+uuid: 42c6e89d-66f5-4d91-b34f-004af1dc717d
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.server.content
+  module:
+    - node
+id: main_content_index
+name: 'Main content index'
+description: ''
+read_only: false
+field_settings: {  }
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - blog_post
+        - locations
+        - news
+        - tips
+        - trips
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: -1
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+server: content

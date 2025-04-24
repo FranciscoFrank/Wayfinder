@@ -1,0 +1,18 @@
+uuid: cae3d111-7083-4283-8c68-f16daf4048db
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: minor_fix
+label: 'Minor fix'
+code: back
+media: all
+preprocess: true
+conditions:
+  current_theme:
+    id: current_theme
+    negate: false
+    theme: wayfinder
+contexts: {  }
+conditions_require_all: true

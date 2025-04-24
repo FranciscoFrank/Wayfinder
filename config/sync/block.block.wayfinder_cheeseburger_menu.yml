@@ -26,19 +26,19 @@ settings:
   show_navigation: false
   invoke_hooks: false
   track_active_trail: true
-  left_side_background_color: '#fffdf7'
+  left_side_background_color: '#dad7cd'
   left_side_background_opacity: '1'
-  left_side_text_color: '#0a2342'
+  left_side_text_color: '#344e41'
   left_side_text_opacity: '1'
-  right_side_background_color: '#fffdf7'
+  right_side_background_color: '#dad7cd'
   right_side_background_opacity: '1'
-  right_side_text_color: '#0a2342'
+  right_side_text_color: '#344e41'
   right_side_text_opacity: '1'
-  trigger_color: '#0a2342'
+  trigger_color: '#344e41'
   trigger_opacity: '1'
-  trigger_background_color: '#fffdf7'
+  trigger_background_color: '#dad7cd'
   trigger_background_opacity: '1'
-  scrollbar_color: '#fffdf7'
+  scrollbar_color: '#dad7cd'
   scrollbar_opacity: '1'
   menus:
     header-navigation:
